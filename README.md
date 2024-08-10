@@ -14,6 +14,6 @@ cd F_API
 
 npm install
 
-API_KEY=45684b1700ec38c4a0422c28165f25f6
+API_KEY=""
 
 npm start
