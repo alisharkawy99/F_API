@@ -1,0 +1,119 @@
+body{
+    margin :0;
+    background-image: url('/Rain.jpg');
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #12282e;
+}
+h1{
+    padding-top: 50px;
+    color: #060606;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    font-size: 80px;
+}
+h2{
+    color: #fcfafa;
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+
+.text{
+    font-family:fantasy;
+    font-size: 30px;
+    color: rgb(10, 10, 10);
+    margin-right: 10px;
+}
+.icons{
+     /* Black border, 3px wide */
+    border-radius: 20%; /* Makes the border rounded */
+    padding: 5px; /* Space between the image and the border */
+    background-color: rgba(18, 17, 17, 0.505);
+}
+.weather{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.dropdown{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(19, 19, 19, 0.1);
+    width: 300px;  
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.weather_clear_container{
+    width: 80%; /* Fill 80% of the page width */
+    border: 4px solid rgba(0, 0, 0, 0.3); /* Translucent border */
+    border-radius: 20px; /* Optional: rounded corners */
+    padding: 20px; /* Space inside the border */
+    margin: 20px auto; /* Center the container */
+    text-align: center; /* Center text */
+    background-color: rgba(255, 255, 255, 0.205); /* Translucent background */
+    box-sizing: border-box; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    align-items: center;
+    
+}
+
+
+.advanced-button {
+    background: linear-gradient(145deg, darkslategray, #3f3d56); /* Gradient background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 30px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block layout */
+    font-size: 18px; /* Font size */
+    margin: 5px; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+  
+  .advanced-button:hover {
+    background: linear-gradient(145deg, #12282e, #292753); /* Reverse gradient on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  .advanced-button:active {
+    background: linear-gradient(145deg, #3f3d56, #6c63ff); /* Same gradient when clicked */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow when clicked */
+    transform: scale(0.98); /* Slightly smaller when clicked */
+  }
+  
+  

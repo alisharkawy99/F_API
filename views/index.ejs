@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenitcation Project</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <% if (locals.background_image) { %>
+        <style>
+            body {
+                background-image: url("/<%= background_image %>");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        </style>
+        <% } %>
+</head>
+<body>
+    <div class="weather_clear_container">
+    <% if (locals.City ) { %>
+
+        <h1><%= City.toUpperCase() %></h1>
+        <div class="weather">
+            <p>
+                <span class="text "><%= temperature %> °C</span> 
+                <span class="text " ><%= response %></span> 
+                 <span><img  src="https://openweathermap.org/img/wn/<%= icon %>@2x.png" alt="icon" class="icons"></span>
+             </p>
+        </div>
+        
+        <% } else { %>
+            <h1>Please Enter Your Country and City</h1>
+        <%  }%>
+   
+    
+    
+    <div class="container">
+        <form action="/" method="POSt">
+            <select id="country" name="country" class="dropdown">
+                <option value="">--Select a country--</option>
+                <option value="US" data-iso="US">United States (US)</option>
+                <option value="GB" data-iso="GB">United Kingdom (GB)</option>
+                <option value="CA" data-iso="CA">Canada (CA)</option>
+                <option value="AU" data-iso="AU">Australia (AU)</option>
+                <option value="FR" data-iso="FR">France (FR)</option>
+                <option value="DE" data-iso="DE">Germany (DE)</option>
+                <option value="JP" data-iso="JP">Japan (JP)</option>
+                <option value="CN" data-iso="CN">China (CN)</option>
+                <option value="IN" data-iso="IN">India (IN)</option>
+                <option value="BR" data-iso="BR">Brazil (BR)</option>
+                <option value="ZA" data-iso="ZA">South Africa (ZA)</option>
+                <option value="MX" data-iso="MX">Mexico (MX)</option>
+                <option value="RU" data-iso="RU">Russia (RU)</option>
+                <option value="IT" data-iso="IT">Italy (IT)</option>
+                <option value="ES" data-iso="ES">Spain (ES)</option>
+                <option value="KR" data-iso="KR">South Korea (KR)</option>
+                <option value="AR" data-iso="AR">Argentina (AR)</option>
+                <option value="SG" data-iso="SG">Singapore (SG)</option>
+                <option value="NG" data-iso="NG">Nigeria (NG)</option>
+                <option value="TH" data-iso="TH">Thailand (TH)</option>
+                <option value="SE" data-iso="SE">Sweden (SE)</option>
+                <option value="NO" data-iso="NO">Norway (NO)</option>
+                <option value="NZ" data-iso="NZ">New Zealand (NZ)</option>
+                <option value="CH" data-iso="CH">Switzerland (CH)</option>
+                <option value="PL" data-iso="PL">Poland (PL)</option>
+                <option value="IE" data-iso="IE">Ireland (IE)</option>
+                <option value="DK" data-iso="DK">Denmark (DK)</option>
+                <option value="FI" data-iso="FI">Finland (FI)</option>
+                <option value="PT" data-iso="PT">Portugal (PT)</option>
+                <option value="UA" data-iso="UA">Ukraine (UA)</option>
+                <option value="AE" data-iso="AE">United Arab Emirates (AE)</option>
+                <option value="KW" data-iso="KW">Kuwait (KW)</option>
+                <option value="SA" data-iso="SA">Saudi Arabia (SA)</option>
+                <option value="EG" data-iso="EG">Egypt (EG)</option>
+            </select>
+            <input type="text" name="City" id="City" placeholder="Please enter your City">
+            <button class="advanced-button" type="submit">Change Location</button>
+        </form>
+    </div>
+    
+</div>
+</body>
+</html>
